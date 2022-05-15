@@ -1,0 +1,45 @@
+.filterCard{
+ max-height: 350px;
+ display: grid;
+ grid-template-columns: 35% 65%;
+}
+
+.filterCardSelect{
+    border-right: 1px solid rgb(24, 24, 24);
+    height: 90%;
+    overflow-x: scroll;
+}
+
+.filterCardSelectOptions{
+    height: 90%;
+    overflow-y: scroll;
+}
+.filterCardSelectState,
+.filterCardSelectCity{
+    margin: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgb(24, 24, 24);
+    padding: 0.5rem 1rem 1rem;
+    font-weight: bold;
+}
+.filterCardStateOption{
+    margin: 0.5rem 0;
+    border-bottom: 1px solid rgb(24, 24, 24);
+    padding: 0.5rem 1rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filterCardSelectState:hover,
+.filterCardSelectCity:hover,
+.filterCardStateOption:hover{
+color: rgb(113, 113, 113);
+cursor: pointer;
+}
+
+.button{
+    height: 2rem;
+    color: #fff;
+    background-color: rgb(17, 17, 17);
+    cursor: pointer;
+}

@@ -1,0 +1,80 @@
+.cardContainer{
+    width: 80%;
+    height: 10rem;
+    color: white;
+    background-color: rgb(17, 17, 17);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 30% 40% 35%;
+    border-radius: 5px;
+}
+
+.cardContainerMapImage {
+    width:90%;
+    height:70%;
+    border-radius: 5px;
+    background-size: 100% 100%;
+}
+
+.cardContainerMap{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.cardContainerData{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left: 1rem;
+}
+
+.cardContainerRideData{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    font-size:0.7rem;
+}
+
+.cardContainerRideData span {
+    margin: 3px 0;
+}
+
+.cardContainerState{
+    display: flex;
+    justify-content:flex-start;
+    padding: 1rem;
+    font-size:0.7rem;
+}
+.cardContainerState span {
+    margin-right: 0.5rem;
+}
+
+@media ( min-width: 650px ) and (max-width: 900px) {
+    .cardContainer{
+        grid-template-columns: 25% 45% 30%;
+    }
+
+    .cardContainerRideData{
+        font-size:0.6rem;
+    }
+
+    .cardContainerState{
+        font-size:0.5rem;
+    }
+
+}
+
+@media (max-width: 649px) {
+    .cardContainer{
+        height: 20rem;
+        grid-template-rows: 50% 40% 10%;
+        grid-template-columns: none;
+        width: 90%;
+    }
+    .cardContainerState{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+}

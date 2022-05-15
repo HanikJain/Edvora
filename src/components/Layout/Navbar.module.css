@@ -1,0 +1,60 @@
+.navbar{
+    width: 100%;
+    height: 54px;
+    color: white;
+    background-color: rgb(17, 17, 17);
+    padding: 0.1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top :  0;
+    left : 0;
+    position: sticky;
+
+}
+.navbar a {
+    text-decoration: none;  
+}
+.navbar a:active,
+.navbar a:visited,
+.navbar a:link{
+    color: white;
+}
+.navbar a:hover{
+    filter: brightness(0.5);
+}
+.navbarTitle{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbarUser{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbarUserName{
+    color: white;
+    margin-right: 1.5rem;
+}
+
+.navbarUser img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+@media ( min-width: 361px ) and (max-width: 768px) {
+    .navbar{
+        padding: 0.1rem 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar{
+        padding: 0.1rem 1rem;
+    }
+    
+}
